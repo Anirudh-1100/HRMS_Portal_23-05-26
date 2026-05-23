@@ -6,50 +6,72 @@
   <title>Document</title>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0"></script>
-  <style>
-    .displayreport
-    {
-      display:flex;
-      height:50vh
-    }
-    #myChart
-    {
-      height:400px;
-      width:400px;
-    }
-  </style>
 
-<!-- <link rel="stylesheet" href="./css/style.css"> -->
+
+<link rel="stylesheet" href="./css/style.css">
   <style>
     
   </style>
 </head>
 <body>
   <div class="empreport">
+
     <div class="totalemps">
-      <h3>Total Employees</h3>
-      <h5></h5>
+        <h3>Total Employees</h3>
+        <h5></h5>
     </div>
+
     <div class="presentemps">
-      <h3>Present Employees</h3>
-      <h5></h5>
+        <h3>Present Employees</h3>
+        <h5></h5>
     </div>
+
     <div class="absentemps">
-      <h3>Absent Employees</h3>
-      <h5></h5>
+        <h3>Absent Employees</h3>
+        <h5></h5>
     </div>
-  </div>
-      <button class="viewabsentee">View Absentees</button>
-    <button class="deptempcnt">Department-wise Employee Count </button>
-  <div class="displayreport">
-  <div class="absenteelist">
-    <table border="1">
-      <tbody class="abtable">
-      </tbody>
-    </table>
-  </div>
-  <canvas id="myChart"></canvas>
-  </div>
+
+</div>
+
+<div class="actionsection">
+
+    <!-- LEFT SIDE -->
+    <div class="leftsection">
+
+        <div class="buttonsection">
+
+            <button class="viewabsentee">
+                View Absentees
+            </button>
+
+            <button class="deptempcnt">
+                Department-wise Employee Count
+            </button>
+
+        </div>
+
+        <div class="absenteelist">
+
+            <table border="1">
+
+                <tbody class="abtable">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="chartbox">
+        <canvas id="myChart"></canvas>
+    </div>
+
+</div>
+
+
   <script src="js/app.js"></script>
 </body>
 </html> 
@@ -57,3 +79,8 @@
 
 
  
+
+
+
+
+

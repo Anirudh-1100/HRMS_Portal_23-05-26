@@ -1,5 +1,5 @@
-if(!localStorage.getItem("employees"))
-{
+localStorage.clear()
+
 fetch("./js/data.json")
 .then((response)=>response.json())
 .then((data)=>{
@@ -8,7 +8,7 @@ fetch("./js/data.json")
   localStorage.setItem("departments",JSON.stringify(data.departments))
   localStorage.setItem("leaveApplications",JSON.stringify(data.leaveApplications))
 })
-}
+
 
 employees = JSON.parse(localStorage.getItem("employees"))
 departments = JSON.parse(localStorage.getItem("departments"))

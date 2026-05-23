@@ -338,8 +338,8 @@
     "employeeId": "EMP020",
     "employeeName": "Meena Iyer",
     "leaveType": "Casual Leave",
-    "fromDate": "2026-08-01",
-    "toDate": "2026-08-02",
+    "fromDate": "2026-05-20",
+    "toDate": "2026-05-25",
     "reason": "Personal work"
   },
   {
@@ -354,8 +354,8 @@
     "employeeId": "EMP008",
     "employeeName": "Pooja Das",
     "leaveType": "Maternity Leave",
-    "fromDate": "2026-10-01",
-    "toDate": "2026-12-31",
+    "fromDate": "2026-05-21",
+    "toDate": "2026-10-31",
     "reason": "Maternity leave application"
   }
 ]
