@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Department Management</title>
+    <link rel="stylesheet" href="css/DepartmentStyle.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Department Management</h1>
+
+      <div class="controls">
+        <input type="text" id="searchDept" placeholder="Search Department" />
+
+        <select id="filterDept">
+          <option>All Departments</option>
+          <option>Human Resources</option>
+          <option>Development</option>
+          <option>Testing</option>
+          <option>Finance</option>
+          <option>Marketing</option>
+        </select>
+
+        <button id="sortBtn">Sort A-Z</button>
+
+        <button id="addBtn">Add Department</button>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Department Name</th>
+            <th>Department Head</th>
+            <th>No of Employees</th>
+            <th>Extension No</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+
+        <tbody id="departmentTable">
+          <tr>
+            <td>Development</td>
+            <td>Prajwal</td>
+            <td>25</td>
+            <td>EXT101</td>
+            <td>
+              <button>Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <script src="jquery-4.0.0.min.js"></script>
+    <script src="js/department.js"></script>
+  </body>
+</html>
