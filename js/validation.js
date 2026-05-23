@@ -87,12 +87,12 @@ $(document).ready(function () {
       return false;
     }
 
-    if (name.length < 3) {
+    if (designation.length < 3) {
       alert("designation must contain at least 3 characters");
       return false;
     }
 
-    if (!pattern.test(name)) {
+    if (!pattern.test(designation)) {
       alert("designation should contain only letters");
       return false;
     }
