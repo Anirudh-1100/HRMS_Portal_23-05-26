@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leave & Attendance</title>
+
+    <link rel="stylesheet" href="css/leave.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/leave.js"></script>
+</head>
+
+<body>
+
+<h1>HRMS - Leave & Attendance</h1>
+
+<div style="text-align:center;">
+    <!-- ROLE SELECT -->
+    <label>Select Role:</label>
+    <select id="role">
+        <option value="Employee">Employee</option>
+        <option value="HR">HR</option>
+    </select>
+</div>
+
+<br>
+
+<button id="toggleForm">Apply Leave</button>
+
+<div id="notification"></div>
+
+<div id="formBox">
+    <fieldset>
+        <legend>Leave Application</legend>
+        <table>
+            <tr><td>ID</td><td><input type="text" id="empId" required></td></tr>
+            <tr><td>Name</td><td><input type="text" id="empName" required></td></tr>
+
+            <tr>
+                <td>Type</td>
+                <td>
+                    <select id="leaveType">
+                        <option>Sick</option>
+                        <option>Casual</option>
+                        <option>Paid</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr><td>From</td><td><input type="date" id="fromDate" required></td></tr>
+            <tr><td>To</td><td><input type="date" id="toDate" required></td></tr>
+
+            <tr><td>Reason</td><td><textarea id="reason" required></textarea></td></tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <button id="applyLeave">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</div>
+
+<div style="text-align:center;">
+    <select id="filterStatus">
+        <option value="All">All</option>
+        <option value="Approved">Approved</option>
+        <option value="Pending">Pending</option>
+        <option value="Rejected">Rejected</option>
+    </select>
+
+    <input type="text" id="search" placeholder="Search">
+</div>
+
+<table id="leaveTable">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Days</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<hr>
+
+<h2>Attendance</h2>
+
+<table id="attendanceTable">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Status</th>
+            <th>Mark</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+</body>
+</html>

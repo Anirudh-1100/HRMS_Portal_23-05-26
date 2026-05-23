@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Employee Dashboard</title>
+
+<link
+rel="stylesheet"
+href="css/dashboard.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Employee Dashboard</h1>
+
+      <div class="controls">
+        <input type="text" id="searchEmployee" placeholder="Search Employee" />
+
+        <select id="employeeFilter">
+          <option>All Departments</option>
+        </select>
+
+        <button id="addEmployee">Add Employee</button>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Employee ID</th>
+
+            <th>Employee Name</th>
+
+            <th>Department</th>
+
+            <th>Designation</th>
+
+            <th>Salary</th>
+
+            <th>Attendance Status</th>
+
+            <th>Action</th>
+          </tr>
+        </thead>
+
+        <tbody id="employeeTable"></tbody>
+      </table>
+    </div>
+<script src="js/app.js"></script>
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>
