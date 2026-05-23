@@ -4,17 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0"></script>
   <style>
-    .empreport
+    .displayreport
     {
-      
+      display:flex;
+      height:50vh
     }
+    #myChart
+    {
+      height:400px;
+      width:400px;
+    }
+  </style>
+
+<!-- <link rel="stylesheet" href="./css/style.css"> -->
+  <style>
+    
   </style>
 </head>
 <body>
   <div class="empreport">
     <div class="totalemps">
-      <h3>Toatal Employees</h3>
+      <h3>Total Employees</h3>
       <h5></h5>
     </div>
     <div class="presentemps">
@@ -25,8 +38,22 @@
       <h3>Absent Employees</h3>
       <h5></h5>
     </div>
-    <div class="viewabsentee">View Absentees</div>
-    <div class="deptempcnt">Department-wise Employee Count </div>
   </div>
+      <button class="viewabsentee">View Absentees</button>
+    <button class="deptempcnt">Department-wise Employee Count </button>
+  <div class="displayreport">
+  <div class="absenteelist">
+    <table border="1">
+      <tbody class="abtable">
+      </tbody>
+    </table>
+  </div>
+  <canvas id="myChart"></canvas>
+  </div>
+  <script src="js/app.js"></script>
 </body>
-</html>
+</html> 
+
+
+
+ 
